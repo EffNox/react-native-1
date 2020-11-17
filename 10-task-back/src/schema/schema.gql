@@ -1,0 +1,71 @@
+type Query {
+	getUsuarios: [Usuario!]!
+	getProyectos: [Proyecto!]!
+	getTareas: [Tarea!]!
+	getTareasByProyecto(proyecto: ID!): [Tarea!]!
+}
+type Mutation {
+	login(dt: LoginInp!): Alert!
+	createUsuario(dt: UsuInp!): Usuario!
+	
+	createProyecto(dt: ProInp!): Proyecto!
+	updateProyecto(id: ID!, dt: ProInp!): Proyecto!
+	deleteProyecto(id: ID!): Proyecto!
+
+	createTarea(dt: TarInp!): Tarea!
+	updateTarea(id: ID!, dt: TarInp!): Tarea!
+	deleteTarea(id: ID!): Tarea!
+}
+
+
+type Alert {
+	msg: String
+	tk: String
+	dt: Usuario
+}
+type Curso {
+	tit: String
+	tec: String
+}
+type Usuario {
+	nom: String
+	cor: String
+	pwd: String
+	createdAt: String
+	updatedAt: String
+}
+type Proyecto {
+	id: ID
+	nom: String
+	createdBy: Usuario
+	createdAt: String
+	updatedAt: String
+}
+type Tarea {
+	id: ID
+	nom: String
+	usuario: Usuario
+	proyecto: Proyecto
+	est: Boolean
+	createdAt: String
+	updatedAt: String
+}
+
+
+input UsuInp {
+	nom: String!
+	cor: String!
+	pwd: String!
+}
+input ProInp {
+	nom: String!
+}
+input TarInp {
+	nom: String
+	proyecto: String
+	est: Boolean
+}
+input LoginInp {
+	cor: String!
+	pwd: String!
+}

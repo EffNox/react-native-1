@@ -1,0 +1,39 @@
+{
+  "clientes": [
+    {
+      "nom": "Ximena",
+      "tel": "977456820",
+      "cor": "test@gmail.com",
+      "emp": "Xime .INC",
+      "id": 1
+    },
+    {
+      "nom": "Fernando",
+      "tel": "966459719",
+      "cor": "fe@gmail.com",
+      "emp": "NixRoYal .INC",
+      "id": 2
+    },
+    {
+      "nom": "Roxana",
+      "tel": "123456789",
+      "cor": "asdasdasasdada",
+      "emp": "sasdINC",
+      "id": 3
+    },
+    {
+      "nom": "Más facil pee",
+      "tel": "yara causa",
+      "cor": "ya sin tru o false",
+      "emp": "xd yara",
+      "id": 4
+    },
+    {
+      "nom": "d",
+      "tel": "t",
+      "cor": "e",
+      "emp": "7",
+      "id": 5
+    }
+  ]
+}

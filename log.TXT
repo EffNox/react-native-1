@@ -1,0 +1,10 @@
+01-bases
+02-flex
+03-data from apis
+04-[data from apis,base-animaciones]
+05-animaciones
+06-asyncStorage (update citas with asyncStorage)
+07-navigation Stack (una sobre otras)
+08-Crud with JSON Server and React Native Paper (framework)
+09-Firebase-Pedidos en tiempo Real (Web and App)
+10-MERNN+G
